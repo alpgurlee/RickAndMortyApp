@@ -1,35 +1,44 @@
 Alp Eren Gürle
 SOLID prensiplerine uygun bir şekilde Rick & Morty çizgi dizisinin açık API aracılığı ile React
-Native alt yapısı kullanılarak çizgi karakterleri tanıtan bir uygulama hazırlanmalıdır.
+Native alt yapısı kullanılarak çizgi karakterleri tanıtan bir uygulama hazırlanmıştır.
 Proje Gereksinimleri :
-● https://rickandmortyapi.com/api/episode API araclığı ile gelen tüm bölümlere ait veriler
-uygulamanın ana ekranında pagination(sayfalama) şeklinde listelenmelidir.
-● Her bölüme ait tüm karakter ve özelliklerini gösteren kartlar aynı şekilde
-pagination(sayfalama) yapılarak listelenmelidir.
+●  Her bölüme ait tüm karakter ve özelliklerini gösteren kartlar için sayfalama
 ● Her bir listeleme için (Bölümler, karakterler vb. ) herhangi bir karakter ismi veya
-özelliklerine göre search(arama) işlemini de yapabiliyor olmalıyım.
-● Herhangi bir bölümün üzerine tıklandığında o bölüme ait API ye istek atılmalı ve bölüme
-ait gelen bilgiler uygulama üzerinde gösterilmelidir. Örnek API için
-https://rickandmortyapi.com/api/episode/8 bağlantısını kullanabilirsiniz.
-● Açılan bölüm sayfasında bölümde bulunan karakterler listelenmeli ve karaktere
-tıklandığında karakter ile ilgili bilgiler API aracılığı ile alarak ekrana dökülmelidir. Örnek
-API için https://rickandmortyapi.com/api/character/1 bağlantısını kullanabilirsiniz.
-● Uygulama tasarımları tamamen uygulama geliştiriciye bırakılmıştır.
-● Pagination işlemi Component olarak oluşturulup, kullanılmalıdır.
-● Listeleme sırasında Favori Karakter seçimi yapılabilmelidir.
-1
-● Maksimum 10 karakter favori olarak eklenebilir. Favori karakter sayısı 10’u geçtiğinde
-kullanıcıya “Favori karakter ekleme sayısını aştınız. Başka bir karakteri favorilerden
-çıkarmalısınız.” bildirimi gösterilmelidir. (Local Notification)
-● Favori karakterleri Redux / Toolkit ve AsyncStorage kullanarak state yönetimi işlemleri
-de yapılmalıdır.
-● Favori karakterlerin listelendiği Favori Karakterler sayfası olmalıdır. Bu sayfada Sil
-butonu yer almalıdır. Silme işlemi yapılmak istendiğinde kullanıcıya “... isimli karakteri
-favorilerden kaldırmak istediğinize emin misiniz?” sorusu sorulmalıdır. Evet seçeneği
-seçildiğinde karakter listeden silinerek güncel liste ekranda gösterilmelidir. Hayır
-seçeneği seçildiğinde herhangi bir işlem yapılmasına gerek yoktur.
-Not -1 : Pagination(sayfalama) yaparken sayfada kaç bölüm/karakter görüneceğini proje
-geliştiricisi belirleyebilir
+özelliklerine göre search
+● Herhangi bir bölüme ait gelen bilgiler uygulama üzerinde gösterilmiştir.
+● Karakterler listeleniyor ayrıca karakter ile ilgili bilgiler ekrana dökülüyor.
+● favori karakter seçimi yapılır ayrıca favori karakter sayfası oluşturulmuştur 10 taneden fazlaya izin verilmemiştir. sil butonu yer almaktadır. Ekran resimlerinde her şey yer almaktadır.
+
+![Screenshot_1717294512](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/0a6f8291-8624-41d3-990d-6178a729c92f)
+![Screenshot_1717294526](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/bddd3e83-0515-4fda-b6f5-d08055fb257b)
+![Screenshot_1717294530](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/9fde3dc5-d07c-4bf2-8c7f-99a9e7502ab3)
+![Screenshot_1717294554](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/7f27a7d7-89ac-4102-87a8-551f74f7ebd9)
+![Screenshot_1717294559](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/9fcfa71b-9fde-435b-8a03-b1a163a3efe6)
+![Screenshot_1717294564](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/1621b5e1-b320-47fc-bca4-61cd2da91f34)
+![Screenshot_1717294570](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/abc69349-1683-402d-899b-d64aad9ec9dc)
+![Screenshot_1717294572](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/59e4bc05-8ddf-47c4-b0c6-f9403ed6ffd8)
+![Screenshot_1717294578](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/bdd72054-fa5d-42ff-ba31-e5e11ef278c2)
+![Screenshot_1717294580](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/bdc30a36-6dc1-48a8-9b48-0f8b0b70074d)
+![Screenshot_1717294584](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/19c26ebb-037c-4dad-b7db-1030a7559cbb)
+![Screenshot_1717294587](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/25aae0b1-8060-44f0-9a9b-aceb7065785f)
+![Screenshot_1717294589](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/eb514a6b-5aff-4313-a70c-40c794240310)
+![Screenshot_1717294592](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/35679def-ad4a-419f-86d1-240d7d696471)
+![Screenshot_1717294594](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/9240ca4e-6769-480c-8a3d-0966b1262e57)
+![Screenshot_1717294382](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/3eeb9948-a951-4d85-ae54-8ab6b03cd806)
+![Screenshot_1717294415](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/b4ace700-1559-4463-810c-ef58853e72d6)
+![Screenshot_1717294419](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/45671a7a-a21a-455b-ad96-f9bb498403ca)
+![Screenshot_1717294423](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/c8e596bf-5c86-41a8-bf6e-e69d6a0a8704)
+![Screenshot_1717294425](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/f2e4c138-deaf-4adb-bcc1-3d770e1cc07a)
+![Screenshot_1717294430](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/e531d9f4-edd6-4d1d-ae1c-8d4bba1eecaf)
+![Screenshot_1717294433](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/798d40b2-f5bb-4eed-b823-1bcdeb49735e)
+![Screenshot_1717294446](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/b1c4a244-a084-4032-874e-65c0ca21f5b8)
+![Screenshot_1717294452](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/7ee24f53-95ac-4e0b-ae71-7972da0854f1)
+![Screenshot_1717294464](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/60826e3a-7160-41dd-9669-838d215bf6cf)
+![Screenshot_1717294465](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/72e7cd63-3eaa-43cd-a397-41c050494bd5)
+![Screenshot_1717294472](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/99682bd8-58ed-4c68-8f12-681e126efafe)
+![Screenshot_1717294474](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/ce263f32-ad7a-47c8-848b-29b46fa843e1)
+![Screenshot_1717294509](https://github.com/alpgurlee/RickAndMortyApp/assets/66573571/6defc450-7cb6-424b-90fe-4630d7ecc77a)
+
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
